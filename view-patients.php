@@ -18,10 +18,10 @@
                   <tr>
                     <td><?php echo $patient['patient_id'];?></td>
                     <td>
-                      <?php echo $$patient['patient_name'];?></td>
+                      <?php echo $patient['patient_name'];?></td>
                     </td>
                     <td>
-                      <?php echo $$patient['patient_description'];?></td>
+                      <?php echo $patient['patient_description'];?></td>
                     </td>
                   </tr>                  
                 <?php
