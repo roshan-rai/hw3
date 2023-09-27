@@ -16,12 +16,12 @@
               {
                 ?>
                   <tr>
-                    <td><?php echo $doctor['doctors_id'];?></td>
+                    <td><?php echo $doctor['doctor_id'];?></td>
                     <td>
-                      <?php echo $doctor['doctors_name'];?></td>
+                      <?php echo $doctor['doctor_name'];?></td>
                     </td>
                     <td>
-                      <?php echo $doctor['doctors_area'];?></td>
+                      <?php echo $doctor['doctor_area'];?></td>
                     </td>
                   </tr>
                   
