@@ -6,7 +6,7 @@
          <th>ID</th>
       <th>Name</th>
       <th>Area</th>
-  
+         <th></th>
       </tr>
      
     </thead>
@@ -23,6 +23,7 @@
                     <td>
                       <?php echo $doctor['doctor_area'];?></td>
                     </td>
+                    <td><a href="patients-by-doctor.php?id=<?php echo $doctor['doctor_id'];?>">Patients</a></td>
                   </tr>
                   
                 <?php
