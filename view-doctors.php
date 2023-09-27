@@ -12,7 +12,7 @@
     </thead>
       <tbody>
         <?php>
-            while($doctor = $doctors-> fetch_assoc())
+            while ($doctor = $doctors-> fetch_assoc())
               {
                 ?>
                   <tr>
