@@ -11,7 +11,7 @@
      
     </thead>
       <tbody>
-        <?php>
+        <?php
             while ($doctor = $doctors-> fetch_assoc())
               {
                 ?>
@@ -27,7 +27,7 @@
                   
                 <?php
               }
-        <?>
+        ?>
       </tbody>
     
   </table>
