@@ -1,5 +1,5 @@
 <?php
-function selectDoctors($uEmail) {
+function selectDoctors() {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT doctor_id, doctor_name, doctor_area FROM `doctor` ");
