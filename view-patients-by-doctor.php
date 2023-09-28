@@ -21,7 +21,7 @@
                     <td><?php echo $patient['patient_id'];?></td>
                     <td><?php echo $patient['patient_name'];?></td>
                     <td> <?php echo $patient['patient_description'];?></td>
-                    <td><?php echo $treatment['treatment_name'];?></td>
+                    <td><?php echo $patient['treatment_name'];?></td>
                     <td><?php echo $patient['patient_description'];?></td>
                     <td><?php echo $patient['patient_description'];?></td>
                   </tr>                  
