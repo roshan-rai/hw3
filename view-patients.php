@@ -20,7 +20,7 @@
                     <td><?php echo $patient['patient_name'];?></td>
                     <td><?php echo $patient['patient_description'];?></td>
                     <td>
-                      <form method="post" action="treatments-by-patients.php">
+                      <form method="post" action="treatments-by-patient.php">
                         <input type="hidden" name="pid" value="<?php echo $patient['patient_id'];?>"/>
                             <button type="submit" class="btn btn-primary">Treatments</button>
                           </form>
