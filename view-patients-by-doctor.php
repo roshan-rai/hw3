@@ -6,9 +6,9 @@
          <th>Pat ID</th>
       <th>Patient Name</th>
       <th>Description</th>
-      <th>treatment_name</th>
-      <th>treatment_startdate</th>
-      <th>treatment_enddate</th>
+      <th>Treatment Name</th>
+      <th>Treatment StartDate</th>
+      <th>Treatment EndDate</th>
       </tr>
      
     </thead>
@@ -19,12 +19,11 @@
                 ?>
                   <tr>
                     <td><?php echo $patient['patient_id'];?></td>
-                    <td>
-                      <?php echo $patient['patient_name'];?></td>
-                    </td>
-                    <td>
-                      <?php echo $patient['patient_description'];?></td>
-                    </td>
+                    <td><?php echo $patient['patient_name'];?></td>
+                    <td> <?php echo $patient['patient_description'];?></td>
+                    <td><?php echo $treatment['treatment_name'];?></td>
+                    <td><?php echo $patient['patient_description'];?></td>
+                    <td><?php echo $patient['patient_description'];?></td>
                   </tr>                  
                 <?php
               }
