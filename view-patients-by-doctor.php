@@ -22,8 +22,8 @@
                     <td><?php echo $patient['patient_name'];?></td>
                     <td> <?php echo $patient['patient_description'];?></td>
                     <td><?php echo $patient['treatment_name'];?></td>
-                    <td><?php echo $patient['patient_description'];?></td>
-                    <td><?php echo $patient['patient_description'];?></td>
+                    <td><?php echo $patient['treatment_startdate'];?></td>
+                    <td><?php echo $patient['treatment_enddate'];?></td>
                   </tr>                  
                 <?php
               }
