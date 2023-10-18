@@ -8,7 +8,7 @@
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="newPatientModal<?php echo $patient['patient_id']; ?>" tabindex="-1" aria-labelledby="newPatientModalLabel<?php echo $patient['patient_id']; ?>" aria-hidden="true">
+<div class="modal fade" id="editPatientModal<?php echo $patient['patient_id']; ?>" tabindex="-1" aria-labelledby="editPatientModalLabel<?php echo $patient['patient_id']; ?>" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
