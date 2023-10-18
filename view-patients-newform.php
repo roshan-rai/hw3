@@ -25,6 +25,7 @@
               <label for="cDescription" class="form-label">Patient Description</label>
               <input type="text" class="form-control" id="pDescription" name="pDescription">
             </div>
+                <input type="hidden" name="actionType" value="Add">
             <button type="submit" class="btn btn-primary">Save</button>
           </form>
       </div>
