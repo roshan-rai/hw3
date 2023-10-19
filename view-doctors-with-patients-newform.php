@@ -20,7 +20,7 @@
             <div class="mb-3">
               <label for="pName" class="form-label">Patient Name</label>
 <?php
-$doctorsList = selectDoctorForInput();
+$doctorsList = selectDoctorsForInput();
 include "view-doctor-input-list.php";
 ?>
             </div>
