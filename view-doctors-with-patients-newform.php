@@ -19,7 +19,10 @@
           <form method="post" action="">
             <div class="mb-3">
               <label for="pName" class="form-label">Patient Name</label>
-              <input type="text" class="form-control" id="pName" name="pName">
+<?php
+$doctorsList = selectDoctorForInput();
+include "view-doctor-input-list.php";
+?>
             </div>
             <div class="mb-3">
               <label for="cDescription" class="form-label">Patient Description</label>
