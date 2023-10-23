@@ -15,10 +15,7 @@
                             <li class="list-group-item">
                                 <?php echo $patient['patient_name']; ?> - <?php echo $patient['treatment_name']; ?> - <?php echo $patient['treatment_startdate']; ?> - <?php echo $patient['treatment_enddate']; ?>
                            <td>
-    <form method="post" action="treatments-by-patient.php">
-        <input type="hidden" name="pid" value="<?php echo $patient['patient_id']; ?>"/>
-        <button type="submit" class="btn btn-primary">Treatments</button>
-    </form>
+
 </td>
 
 <td>
