@@ -66,7 +66,7 @@ function deleteDoctorWithPatients($tid) {
         $stmt->execute();
         $success = $stmt->execute();
         $conn->close();
-        return $result;
+        return $success;
     } catch (Exception $e) {
         $conn->close();
         throw $e;
