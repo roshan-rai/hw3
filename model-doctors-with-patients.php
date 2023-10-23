@@ -56,12 +56,15 @@ function selectPatientForInput() {
         throw $e;
     }
 }
-function deleteDoctorWithPatients() {
+
+
+function deleteDoctorWithPatients($tid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT doctor_id, doctor_name, doctor_area FROM `doctor` ");
+        $stmt = $conn->prepare("Delete from treatment where treatment_id=? ");
+        $stmt->bind_param("i", $tid);
         $stmt->execute();
-        $result = $stmt->get_result();
+        $success = $stmt->execute();
         $conn->close();
         return $result;
     } catch (Exception $e) {
