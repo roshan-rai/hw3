@@ -19,6 +19,7 @@
             <div class="mb-3">
               <label for="did" class="form-label">Doctor</label>
                   <?php $doctorList=selectDoctorsForInput(); 
+                        $selectedDoctor = 0;
                   include "view-doctor-input-list.php"; ?>
             </div>
              <div class="mb-3">
