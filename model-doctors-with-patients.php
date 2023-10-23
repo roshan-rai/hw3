@@ -43,10 +43,12 @@ function selectDoctorsForInput() {
     }
 }
 
+
+
 function selectPatientForInput() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT patient_id, patient_name FROM `patient` order by course_name ");
+        $stmt = $conn->prepare("SELECT patient_id, patient_name FROM `patient` order by patient_name ");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
