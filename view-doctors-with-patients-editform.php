@@ -18,7 +18,9 @@
           <form method="post" action="">
             <div class="mb-3">
               <label for="pid<?php echo $patient['patient_id']; ?>" class="form-label">Patient Name</label>
-              <input type="text" class="form-control" id="pid<?php echo $patient['patient_id']; ?>" name="pid" value="<?php echo $patient['patient_name']; ?>">
+                 <?php $doctorList=selectDoctorsForInput(); 
+                        $selectedDoctor = $patient['doctor_id'];
+                  include "view-doctor-input-list.php"; ?>
             </div>
                <div class="mb-3">
               <label for="treatment_name<?php echo $patient['patient_id']; ?>" class="form-label">Treatment Name</label>
