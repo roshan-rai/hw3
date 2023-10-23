@@ -91,7 +91,7 @@ function insertDoctorWithPatients( $did, $pid, $treatment_name, $sDate, $eDate) 
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `treatment` ( `doctor_id`, `patient_id`, `treatment_name`, `treatment_startdate`, `treatment_enddate`) VALUES (?, ?, ?, ?, ?);");
-        $stmt->bind_param("iisdd",  $did, $pid,$treatment_name, $sDate, $eDate);
+        $stmt->bind_param("iisss",  $did, $pid,$treatment_name, $sDate, $eDate);
         $success = $stmt->execute();
         $conn->close();
         return $success;
