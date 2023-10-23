@@ -34,7 +34,7 @@ if (isset($_POST['actionType'])) {
       else {
     echo '<div class="alert alert-danger" role="alert"> Error</div>';
         }  
-
+  }
 $doctors = selectDoctors();
 
 include "view-doctors-with-patients.php";
