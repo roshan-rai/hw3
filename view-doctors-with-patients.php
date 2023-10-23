@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col">
-    <h1>Patients</h1>
+    <h1>Doctors with Patients</h1>
 </div>
   <div class="col-auto"> 
 <?php
