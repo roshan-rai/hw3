@@ -18,7 +18,10 @@
           <form method="post" action="">
             <div class="mb-3">
               <label for="did" class="form-label">Doctor</label>
-                  <input type="text" class="form-control" id="did" name="did">
+<?php
+$doctorList=selectDoctorForInput();
+include "view-doctor-input-list.php";
+?>
             </div>
              <div class="mb-3">
               <label for="pid" class="form-label">Patient ID</label>
