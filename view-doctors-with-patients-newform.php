@@ -26,8 +26,8 @@
                   <input type="text" class="form-control" id="pName" name="pName">
             </div>
             <div class="mb-3">
-              <label for="TName" class="form-label">Treatment Name</label>
-                  <input type="text" class="form-control" id="tName" name="tName">
+              <label for="treatment_name" class="form-label">Treatment Name</label>
+                  <input type="text" class="form-control" id="treatment_name" name="treatment_name">
             </div>
             <div class="mb-3">
               <label for="sDate" class="form-label">Start Date </label>
