@@ -87,7 +87,6 @@ function updateDoctorWithPatients($tid, $did, $pid, $treatment_name, $sDate, $eD
     }
 }
 
-
 function insertDoctorWithPatients( $did, $pid, $treatment_name, $sDate, $eDate) {
     try {
         $conn = get_db_connection();
@@ -97,6 +96,7 @@ function insertDoctorWithPatients( $did, $pid, $treatment_name, $sDate, $eDate) 
         $conn->close();
         return $success;
     } catch (Exception $e) {
+        console.log("error",$e);
         $conn->close();
         throw $e;
     }
