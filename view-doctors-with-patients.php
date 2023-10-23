@@ -14,19 +14,7 @@
                         ?>
                             <li class="list-group-item">
                                 <?php echo $patient['patient_name']; ?> - <?php echo $patient['treatment_name']; ?> - <?php echo $patient['treatment_startdate']; ?> - <?php echo $patient['treatment_enddate']; ?>
-                            </li>
-                        <?php } ?>
-                    </ul>
-                </p>
-                <p class="card-text"><small class="text-body-secondary">Specialist: <?php echo $doctor['doctor_area']; ?></small></p>
-            </div>
-        </div>
-    <?php } ?>
-</div>
-
-<?php include "view-doctors-with-patients-editform.php"; ?>
-
-<td>
+                           <td>
     <form method="post" action="treatments-by-patient.php">
         <input type="hidden" name="pid" value="<?php echo $patient['patient_id']; ?>"/>
         <button type="submit" class="btn btn-primary">Treatments</button>
@@ -45,3 +33,16 @@
         </button>
     </form>
 </td>
+                            </li>
+                        <?php } ?>
+                    </ul>
+                </p>
+                <p class="card-text"><small class="text-body-secondary">Specialist: <?php echo $doctor['doctor_area']; ?></small></p>
+            </div>
+        </div>
+    <?php } ?>
+</div>
+
+<?php include "view-doctors-with-patients-editform.php"; ?>
+
+
