@@ -35,8 +35,8 @@
               <input type="text" class="form-control" id="eDate<?php echo $patient['patient_id']; ?>" name="eDate" value="<?php echo $patient['treatment_enddate']; ?>">
             </div>
             <div class="mb-3">
-              <label for="did<?php echo $patient['patient_id']; ?>" class="form-label">Doctor</label>
-              <input type="text" class="form-control" id="did<?php echo $patient['patient_id']; ?>" name="did" value="<?php echo $patient['doctor_id']; ?>">
+              <label for="doctor_name<?php echo $patient['patient_id']; ?>" class="form-label">Doctor</label>
+              <input type="text" class="form-control" id="did<?php echo $patient['patient_id']; ?>" name="doctor_name" value="<?php echo $patient['doctor_name']; ?>">
             </div>
                 <input type="hidden" name="pid" value="<?php echo $patient['patient_id']; ?>">
                 <input type="hidden" name="tid" value="<?php echo $patient['treatment_id']; ?>">
