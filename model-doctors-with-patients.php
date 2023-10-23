@@ -85,5 +85,18 @@ function updateDoctorWithPatients($tid, $did, $pid, $treatment_name, $sDate, $eD
         throw $e;
     }
 }
+function insertDoctorWithPatients($tid, $did, $pid, $treatment_name, $sDate, $eDate) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("insert into `treatment` set `treatment_name`=?, `doctor_id` = ?,  `treatment_startdate` = ?, `treatment_enddate` = ? where treatment_id=?");
+        $stmt->bind_param("siiddi", $treatment_name, $did, $pid, $sDate, $eDate, $tid);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 
 ?>
