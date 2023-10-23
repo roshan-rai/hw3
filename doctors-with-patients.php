@@ -17,9 +17,9 @@ if (isset($_POST['actionType'])) {
       }
       break;
     case "Edit":
-      if(updatePatients($_POST['pName'], $_POST['pDescription'], $_POST['pid']))
+        if( updateDoctorWithPatients($_POST['tid'], $_POST['did'], $_POST['pid'], $_POST['treatment_name'], $_POST['sDate'], $_POST['eDate']))
       {
-        echo '<div class="alert alert-success" role="alert"> Patients successfully edited!</div>';
+        echo '<div class="alert alert-success" role="alert"> Information successfully edited!</div>';
       }
       else
       {
