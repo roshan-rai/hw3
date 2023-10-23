@@ -21,8 +21,8 @@
               <input type="text" class="form-control" id="pid<?php echo $patient['patient_id']; ?>" name="pid" value="<?php echo $patient['patient_name']; ?>">
             </div>
                <div class="mb-3">
-              <label for="tid<?php echo $patient['patient_id']; ?>" class="form-label">Treatment Name</label>
-              <input type="text" class="form-control" id="tid<?php echo $patient['patient_id']; ?>" name="tid" value="<?php echo $patient['treatment_name']; ?>">
+              <label for="treatment_name<?php echo $patient['patient_id']; ?>" class="form-label">Treatment Name</label>
+              <input type="text" class="form-control" id="treatment_name<?php echo $patient['patient_id']; ?>" name="treatment_name" value="<?php echo $patient['treatment_name']; ?>">
             </div>
                <div class="mb-3">
               <label for="sDate<?php echo $patient['patient_id']; ?>" class="form-label">Start Date</label>
