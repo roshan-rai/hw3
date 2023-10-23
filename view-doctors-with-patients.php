@@ -1,6 +1,12 @@
-<h1>Doctors with Patients</h1>
-<?php include "view-patients-newform.php"; ?>
-
+<div class="row">
+  <div class="col">
+    <h1>Patients</h1>
+</div>
+  <div class="col-auto"> 
+<?php
+include "view-doctors-with-patients-newform.php";
+?>
+  </div>
 <div class="card-group">
     <?php while ($doctor = $doctors->fetch_assoc()) { ?>
         <div class="card">
