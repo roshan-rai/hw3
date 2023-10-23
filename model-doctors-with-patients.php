@@ -85,24 +85,12 @@ function updateDoctorWithPatients($tid, $did, $pid, $treatment_name, $sDate, $eD
         throw $e;
     }
 }
-function insertPatients($pName, $pDescription) {
-    try {
-        $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `patient` (`patient_name`, `patient_description`) VALUES (?,?)");
-        $stmt->bind_param("ss", $pName, $pDescription);
-        $success = $stmt->execute();
-        $conn->close();
-        return $success;
-    } catch (Exception $e) {
-        $conn->close();
-        throw $e;
-    }
-}
-function insertDoctorWithPatients($tid, $did, $pid, $treatment_name, $sDate, $eDate) {
+
+function insertDoctorWithPatients( $did, $pid, $treatment_name, $sDate, $eDate) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `treatment` ( `doctor_id`, `patient_id`, `treatment_name`, `treatment_startdate`, `treatment_enddate`) VALUES (?, ?, ?, ?, ?);");
-        $stmt->bind_param("siiddi", $treatment_name, $did, $pid, $sDate, $eDate, $tid);
+        $stmt->bind_param("iisdd",  $did, $pid,$treatment_name, $sDate, $eDate);
         $success = $stmt->execute();
         $conn->close();
         return $success;
