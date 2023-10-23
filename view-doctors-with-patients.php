@@ -31,6 +31,8 @@
     </form>
 </td>
                             </li>
+                        <?php include "view-doctors-with-patients-editform.php"; ?>
+
                         <?php } ?>
                     </ul>
                 </p>
@@ -40,6 +42,5 @@
     <?php } ?>
 </div>
 
-<?php include "view-doctors-with-patients-editform.php"; ?>
 
 
