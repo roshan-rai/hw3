@@ -9,7 +9,7 @@ if (isset($_POST['actionType'])) {
     case "Add":
         if(insertDoctorWithPatients( $_POST['did'], $_POST['pid'], $_POST['treatment_name'], $_POST['sDate'], $_POST['eDate']) )
       {
-        echo '<div class="alert alert-success" role="alert"> Patients successfully added!</div>';
+        echo '<div class="alert alert-success" role="alert"> Information successfully added!</div>';
       }
       else
       {
