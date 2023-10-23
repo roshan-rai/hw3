@@ -32,7 +32,7 @@
               <label for="esDate<?php echo $patient['patient_id']; ?>" class="form-label">End Date</label>
               <input type="text" class="form-control" id="eDate<?php echo $patient['patient_id']; ?>" name="eDate" value="<?php echo $patient['treatment_enddate']; ?>">
             </div>
-              <input type="hidden" class="form-control" id="tid<?php echo $patient['patient_id']; ?>" name="tid" value="<?php echo $patient['tid']; ?>">
+            <input type="hidden" class="form-control" id="tid<?php echo $patient['patient_id']; ?>" name="tid" value="<?php echo $patient['tid']; ?>">
               
             <div class="mb-3">
               <label for="did<?php echo $patient['patient_id']; ?>" class="form-label">Doctor</label>
