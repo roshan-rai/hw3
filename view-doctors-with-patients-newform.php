@@ -19,15 +19,24 @@ INSERT INTO `treatment` (`treatment_id`, `doctor_id`, `patient_id`, `treatment_n
       <div class="modal-body">
           <form method="post" action="">
             <div class="mb-3">
+              <label for="dName" class="form-label">Doctor</label>
+                  <input type="text" class="form-control" id="dName" name="dName">
+            </div>
+             <div class="mb-3">
               <label for="pName" class="form-label">Patient Name</label>
-<?php
-$doctorsList = selectDoctorsForInput();
-include "view-doctor-input-list.php";
-?>
+                  <input type="text" class="form-control" id="pName" name="pName">
             </div>
             <div class="mb-3">
-              <label for="cDescription" class="form-label">Doctor </label>
-              <input type="text" class="form-control" id="pDescription" name="pDescription">
+              <label for="TName" class="form-label">Treatment Name</label>
+                  <input type="text" class="form-control" id="tName" name="tName">
+            </div>
+            <div class="mb-3">
+              <label for="sDate" class="form-label">Start Date </label>
+              <input type="text" class="form-control" id="sDate" name="sDate">
+            </div>
+            <div class="mb-3">
+              <label for="eDate" class="form-label">End Date </label>
+              <input type="text" class="form-control" id="eDate" name="eDate">
             </div>
                 <input type="hidden" name="actionType" value="Add">
             <button type="submit" class="btn btn-primary">Save</button>
