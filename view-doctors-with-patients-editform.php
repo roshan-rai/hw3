@@ -18,9 +18,8 @@
           <form method="post" action="">
             <div class="mb-3">
               <label for="pid<?php echo $patient['patient_id']; ?>" class="form-label">Patient Name</label>
-                 <?php $doctorList=selectDoctorsForInput(); 
-                        $selectedDoctor = $patient['doctor_id'];
-                  include "view-doctor-input-list.php"; ?>
+                <input type="text" class="form-control" id="pid<?php echo $patient['patient_id']; ?>" name="pid" value="<?php echo $patient['patient_name']; ?>">
+                
             </div>
                <div class="mb-3">
               <label for="treatment_name<?php echo $patient['patient_id']; ?>" class="form-label">Treatment Name</label>
@@ -36,7 +35,9 @@
             </div>
             <div class="mb-3">
               <label for="did<?php echo $patient['patient_id']; ?>" class="form-label">Doctor</label>
-              <input type="text" class="form-control" id="did<?php echo $patient['patient_id']; ?>" name="did" value="<?php echo $patient['doctor_id']; ?>">
+                 <?php $doctorList=selectDoctorsForInput(); 
+                        $selectedDoctor = $patient['doctor_id'];
+                  include "view-doctor-input-list.php"; ?>
             </div>
                 <input type="hidden" name="pid" value="<?php echo $patient['patient_id']; ?>">
                 <input type="hidden" name="tid" value="<?php echo $patient['treatment_id']; ?>">
