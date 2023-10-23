@@ -17,25 +17,25 @@
       <div class="modal-body">
           <form method="post" action="">
             <div class="mb-3">
-              <label for="pName<?php echo $patient['patient_id']; ?>" class="form-label">Patient Name</label>
-              <input type="text" class="form-control" id="pName<?php echo $patient['patient_id']; ?>" name="pName" value="<?php echo $patient['patient_name']; ?>">
+              <label for="pid<?php echo $patient['patient_id']; ?>" class="form-label">Patient Name</label>
+              <input type="text" class="form-control" id="pid<?php echo $patient['patient_id']; ?>" name="pid" value="<?php echo $patient['patient_name']; ?>">
             </div>
                <div class="mb-3">
-              <label for="pName<?php echo $patient['patient_id']; ?>" class="form-label">Treatment Name</label>
-              <input type="text" class="form-control" id="pName<?php echo $patient['patient_id']; ?>" name="pName" value="<?php echo $patient['treatment_name']; ?>">
+              <label for="tid<?php echo $patient['patient_id']; ?>" class="form-label">Treatment Name</label>
+              <input type="text" class="form-control" id="tid<?php echo $patient['patient_id']; ?>" name="tid" value="<?php echo $patient['treatment_name']; ?>">
             </div>
                <div class="mb-3">
-              <label for="pName<?php echo $patient['patient_id']; ?>" class="form-label">Start Date</label>
-              <input type="text" class="form-control" id="pName<?php echo $patient['patient_id']; ?>" name="pName" value="<?php echo $patient['treatment_startdate']; ?>">
+              <label for="sDate<?php echo $patient['patient_id']; ?>" class="form-label">Start Date</label>
+              <input type="text" class="form-control" id="sDate<?php echo $patient['patient_id']; ?>" name="sDate" value="<?php echo $patient['treatment_startdate']; ?>">
             </div>
                <div class="mb-3">
-              <label for="pName<?php echo $patient['patient_id']; ?>" class="form-label">End Date</label>
-              <input type="text" class="form-control" id="pName<?php echo $patient['patient_id']; ?>" name="pName" value="<?php echo $patient['treatment_enddate']; ?>">
+              <label for="esDate<?php echo $patient['patient_id']; ?>" class="form-label">End Date</label>
+              <input type="text" class="form-control" id="eDate<?php echo $patient['patient_id']; ?>" name="eDate" value="<?php echo $patient['treatment_enddate']; ?>">
             </div>
               
             <div class="mb-3">
-              <label for="pDescription<?php echo $patient['patient_id']; ?>" class="form-label">Doctor</label>
-              <input type="text" class="form-control" id="pDescription<?php echo $patient['patient_id']; ?>" name="pDescription" value="<?php echo $patient['doctor_id']; ?>">
+              <label for="did<?php echo $patient['patient_id']; ?>" class="form-label">Doctor</label>
+              <input type="text" class="form-control" id="did<?php echo $patient['patient_id']; ?>" name="did" value="<?php echo $patient['doctor_id']; ?>">
             </div>
                 <input type="hidden" name="pid" value="<?php echo $patient['patient_id']; ?>">
                 <input type="hidden" name="actionType" value="Edit">
