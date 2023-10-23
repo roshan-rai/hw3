@@ -22,6 +22,7 @@
                                     <span><?php echo $patient['patient_name']; ?> - <?php echo $patient['treatment_name']; ?> - <?php echo $patient['treatment_startdate']; ?> - <?php echo $patient['treatment_enddate']; ?></span>
                                     <div class="btn-group" role="group">
                                         <?php include "view-doctors-with-patients-editform.php"; ?>
+                                <br/>
                                         <div class="btn-group" role="group">
                                             <form method="post" action="">
                                                 <input type="hidden" name="pid" value="<?php echo $patient['patient_id']; ?>"/>
