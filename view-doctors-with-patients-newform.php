@@ -18,8 +18,8 @@
       <div class="modal-body">
           <form method="post" action="">
             <div class="mb-3">
-              <label for="dName" class="form-label">Doctor</label>
-                  <input type="text" class="form-control" id="dName" name="dName">
+              <label for="did" class="form-label">Doctor</label>
+                  <input type="text" class="form-control" id="did" name="did">
             </div>
              <div class="mb-3">
               <label for="pName" class="form-label">Patient Name</label>
