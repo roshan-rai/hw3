@@ -16,7 +16,7 @@ function selectDoctors() {
 function selectPatientsByDoctor($did) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT t.doctor_id, p.patient_id, patient_name, patient_description, treatment_name, treatment_startdate, treatment_enddate FROM patient p JOIN treatment t ON t.patient_id = p.patient_id WHERE t.doctor_id = ?");
+        $stmt = $conn->prepare("SELECT treatment_id, t.doctor_id, p.patient_id, patient_name, patient_description, treatment_name, treatment_startdate, treatment_enddate FROM patient p JOIN treatment t ON t.patient_id = p.patient_id WHERE t.doctor_id = ?");
         $stmt->bind_param("i", $did);
         $stmt->execute();
         $result = $stmt->get_result();
