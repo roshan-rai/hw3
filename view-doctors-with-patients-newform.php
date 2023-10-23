@@ -22,8 +22,8 @@
                   <input type="text" class="form-control" id="did" name="did">
             </div>
              <div class="mb-3">
-              <label for="pName" class="form-label">Patient Name</label>
-                  <input type="text" class="form-control" id="pName" name="pName">
+              <label for="pid" class="form-label">Patient ID</label>
+                  <input type="text" class="form-control" id="pid" name="pid">
             </div>
             <div class="mb-3">
               <label for="treatment_name" class="form-label">Treatment Name</label>
