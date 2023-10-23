@@ -12,7 +12,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="editCourseModalLabel<?php echo $patient['patient_id']; ?>">Edit Patients</h1>
+        <h1 class="modal-title fs-5" id="editCourseModalLabel<?php echo $patient['patient_id']; ?>">Edit Doctor With Patients</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -21,9 +21,22 @@
               <label for="pName<?php echo $patient['patient_id']; ?>" class="form-label">Patient Name</label>
               <input type="text" class="form-control" id="pName<?php echo $patient['patient_id']; ?>" name="pName" value="<?php echo $patient['patient_name']; ?>">
             </div>
+               <div class="mb-3">
+              <label for="pName<?php echo $patient['patient_id']; ?>" class="form-label">Treatment Name</label>
+              <input type="text" class="form-control" id="pName<?php echo $patient['patient_id']; ?>" name="pName" value="<?php echo $patient['treatment_name']; ?>">
+            </div>
+               <div class="mb-3">
+              <label for="pName<?php echo $patient['patient_id']; ?>" class="form-label">Start Date</label>
+              <input type="text" class="form-control" id="pName<?php echo $patient['patient_id']; ?>" name="pName" value="<?php echo $patient['treatment_startdate']; ?>">
+            </div>
+               <div class="mb-3">
+              <label for="pName<?php echo $patient['patient_id']; ?>" class="form-label">End Date</label>
+              <input type="text" class="form-control" id="pName<?php echo $patient['patient_id']; ?>" name="pName" value="<?php echo $patient['treatment_enddate']; ?>">
+            </div>
+              
             <div class="mb-3">
-              <label for="pDescription<?php echo $patient['patient_id']; ?>" class="form-label">Patient Description</label>
-              <input type="text" class="form-control" id="pDescription<?php echo $patient['patient_id']; ?>" name="pDescription" value="<?php echo $patient['patient_description']; ?>">
+              <label for="pDescription<?php echo $patient['patient_id']; ?>" class="form-label">Doctor</label>
+              <input type="text" class="form-control" id="pDescription<?php echo $patient['patient_id']; ?>" name="pDescription" value="<?php echo $patient['doctor_id']; ?>">
             </div>
                 <input type="hidden" name="pid" value="<?php echo $patient['patient_id']; ?>">
                 <input type="hidden" name="actionType" value="Edit">
