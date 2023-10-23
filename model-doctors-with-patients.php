@@ -77,7 +77,7 @@ function updateDoctorWithPatients($tid, $did, $pid, $treatment_name, $sDate, $eD
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update `treatment` set `treatment_name`=?, `doctor_id` = ?,  `treatment_startdate` = ?, `treatment_enddate` = ? where treatment_id=?");
-        $stmt->bind_param("sidd", $treatment_name, $did, $sDate, $eDate, $tid);
+        $stmt->bind_param("sissi", $treatment_name, $did, $sDate, $eDate, $tid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
