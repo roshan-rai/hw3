@@ -18,10 +18,8 @@
           <form method="post" action="">
             <div class="mb-3">
               <label for="did" class="form-label">Doctor</label>
-<?php
-$doctorList=selectDoctorsForInput();
-include "view-doctor-input-list.php";
-?>
+                  <?php $doctorList=selectDoctorsForInput(); 
+                  include "view-doctor-input-list.php"; ?>
             </div>
              <div class="mb-3">
               <label for="pid" class="form-label">Patient ID</label>
@@ -32,3 +30,17 @@ include "view-doctor-input-list.php";
                   <input type="text" class="form-control" id="treatment_name" name="treatment_name">
             </div>
             <div class="mb-3">
+              <label for="sDate" class="form-label">Start Date </label>
+              <input type="text" class="form-control" id="sDate" name="sDate">
+            </div>
+            <div class="mb-3">
+              <label for="eDate" class="form-label">End Date </label>
+              <input type="text" class="form-control" id="eDate" name="eDate">
+            </div>
+                <input type="hidden" name="actionType" value="Add">
+            <button type="submit" class="btn btn-primary">Save</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
