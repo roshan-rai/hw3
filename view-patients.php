@@ -30,16 +30,15 @@ include "view-patients-newform.php";
                     <td><?php echo $patient['patient_name'];?></td>
                     <td><?php echo $patient['patient_description'];?></td>
                     <td>
-          <?php
-          include "view-patients-editform.php";
-          ?>
-                    </td>
-                    <td>
-                                 <form method="post" action="treatments-by-patient.php">
+                        <form method="post" action="treatments-by-patient.php">
                         <input type="hidden" name="pid" value="<?php echo $patient['patient_id'];?>"/>
-                            <button type="submit" class="btn btn-primary">Treatments</button>
-                          </form>
+                        <button type="submit" class="btn btn-primary">Treatments</button>
+                        </form>
                     </td>
+                    <td><?php
+          include "view-patients-editform.php";
+          ?></td>
+                 
                     <td>
                       <form method="post" action="">
                         <input type="hidden" name="pid" value="<?php echo $patient['patient_id'];?>"/>
