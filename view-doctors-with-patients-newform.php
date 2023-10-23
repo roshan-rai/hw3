@@ -1,3 +1,4 @@
+INSERT INTO `treatment` (`treatment_id`, `doctor_id`, `patient_id`, `treatment_name`, `treatment_startdate`, `treatment_enddate`) VALUES (NULL, '12', '1', 'gu', '2023-10-23 00:48:24.000000', '2023-10-23 00:48:24.000000');
 
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newPatientModal">
@@ -25,7 +26,7 @@ include "view-doctor-input-list.php";
 ?>
             </div>
             <div class="mb-3">
-              <label for="cDescription" class="form-label">Patient Description</label>
+              <label for="cDescription" class="form-label">Doctor </label>
               <input type="text" class="form-control" id="pDescription" name="pDescription">
             </div>
                 <input type="hidden" name="actionType" value="Add">
