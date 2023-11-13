@@ -28,11 +28,11 @@ if (isset($_POST['actionType'])) {
       if (deletePatients($_POST['pid'])) {
         echo '<div class="alert alert-success" role="alert">Patient successfully deleted!</div>';
         // Include SweetAlert2 JavaScript for success here
-        <script>;
-        Swal.fire({';
-       title: "Success",;
-        text: "Patient deleted successfully",;
-        icon: "success",;
+        echo '<script>';
+        echo 'Swal.fire({';
+        echo '  title: "Success",';
+        echo '  text: "Patient deleted successfully",';
+        echo '  icon: "success",';
         echo '});';
         echo '</script>';
       } else {
@@ -47,7 +47,6 @@ if (isset($_POST['actionType'])) {
         echo '</script>';
       }
       break;
-    
   }
 }
 
