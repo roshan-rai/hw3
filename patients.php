@@ -1,3 +1,7 @@
+<!-- sweetalert2 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.8.0/sweetalert2.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.8.0/sweetalert2.all.min.js"></script>
+
 <?php
 require_once("util-db.php");
 require_once("model-patients.php");
@@ -30,6 +34,13 @@ if (isset($_POST['actionType'])) {
       if (deletePatients($_POST['pid'])) 
       {
             echo '<div class="alert alert-success" role="alert"> Patient successfully deleted!</div>';
+        <script>
+            Swal.fire({
+            title: "Failed",
+            text: "Delete student failed",
+            icon: "error",
+});
+          </script>
         } 
       else {
     echo '<div class="alert alert-danger" role="alert"> Error</div>';
