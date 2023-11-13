@@ -34,6 +34,7 @@ if (isset($_POST['actionType'])) {
       if (deletePatients($_POST['pid'])) 
       {
             echo '<div class="alert alert-success" role="alert"> Patient successfully deleted!</div>';
+        ?>
         <script>
             Swal.fire({
             title: "Failed",
@@ -41,6 +42,7 @@ if (isset($_POST['actionType'])) {
             icon: "error",
 });
           </script>
+        <?php
         } 
       else {
     echo '<div class="alert alert-danger" role="alert"> Error</div>';
