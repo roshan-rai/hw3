@@ -13,6 +13,13 @@ if (isset($_POST['actionType'])) {
     case "Add":
       if (insertPatients($_POST['pName'], $_POST['pDescription'])) {
         echo '<div class="alert alert-success" role="alert">Patients successfully added!</div>';
+           echo '<script>';
+        echo 'Swal.fire({';
+        echo '  title: "Success",';
+        echo '  text: "Patient added successfully",';
+        echo '  icon: "success",';
+        echo '});';
+        echo '</script>';
       } else {
         echo '<div class="alert alert-danger" role="alert">Error</div>';
       }
