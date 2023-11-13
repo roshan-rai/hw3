@@ -110,6 +110,7 @@ include "view-header.php";
     }
   </script>
 
+/* https://tobiasahlin.com/moving-letters/#1, https://plnkr.co/edit/jtpeI2A25KZpcYdP?p=preview&preview (train, chartjs for doughnut, sweet for sucess when added in patients.  */
 
 </body>
 
@@ -120,6 +121,5 @@ include "view-header.php";
 include "view-footer.php";
 ?>
 
-/* https://tobiasahlin.com/moving-letters/#1, https://plnkr.co/edit/jtpeI2A25KZpcYdP?p=preview&preview (train, chartjs for doughnut, sweet for sucess when added in patients.  */
 
 
