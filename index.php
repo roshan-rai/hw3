@@ -1,8 +1,8 @@
 <h1 class="ml1">
   <span class="text-wrapper">
-    <span class="line line1"></span>
-    <span class="letters">THURSDAY</span>
-    <span class="line line2"></span>
+   
+    <span class="letters">Homework 6</span>
+
   </span>
 </h1>
 
@@ -19,6 +19,7 @@
     display: inline-block;
     line-height: 1em;
     position: relative;
+    color: #ff00ff; /* Change text color (e.g., magenta) */
   }
 
   .ml1 .letters .letter {
@@ -31,7 +32,7 @@
     left: 0;
     height: 3px;
     width: 100%;
-    background-color: #fff;
+    background-color: #ff00ff; /* Change line color to match text color */
     transform-origin: 0 0;
   }
 
