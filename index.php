@@ -8,10 +8,8 @@ include "view-header.php";
 <h1 class="ml1">
   <span class="text-wrapper">
    
-    <span class="letters">Homework 6
-     Click on the train to leave. 
-    </span>
-
+    <span class="letters">Homework 6 </span>
+    <span class="letters">Click on the train to leave. </span>
   </span>
 </h1>
 
@@ -122,8 +120,6 @@ include "view-header.php";
 include "view-footer.php";
 ?>
 
-/* https://tobiasahlin.com/moving-letters/#1
-https://plnkr.co/edit/jtpeI2A25KZpcYdP?p=preview&preview (train)
-chartjs for doughnut
-sweet for sucess when added in patients.*/
+/* https://tobiasahlin.com/moving-letters/#1, https://plnkr.co/edit/jtpeI2A25KZpcYdP?p=preview&preview (train, chartjs for doughnut, sweet for sucess when added in patients.  */
+
 
