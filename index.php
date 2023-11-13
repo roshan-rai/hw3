@@ -1,3 +1,11 @@
+<?php
+$pageTitle = "Home";
+include "view-header.php";
+ 
+?>
+
+
+
 <h1 class="ml1">
   <span class="text-wrapper">
    
@@ -70,3 +78,6 @@
       delay: 1000
     });
 </script>
+<?php
+include "view-footer.php";
+?>
