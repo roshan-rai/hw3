@@ -39,7 +39,7 @@ include "view-header.php";
     left: 0;
     height: 3px;
     width: 100%;
-    background-color: #ff00ff; /* Change line color to match text color */
+    background-color: #ff00ff; /* https://tobiasahlin.com/moving-letters/#1, https://plnkr.co/edit/jtpeI2A25KZpcYdP?p=preview&preview (train, chartjs for doughnut, sweet for sucess when added in patients.   */
     transform-origin: 0 0;
   }
 
@@ -110,7 +110,7 @@ include "view-header.php";
     }
   </script>
 
-/* https://tobiasahlin.com/moving-letters/#1, https://plnkr.co/edit/jtpeI2A25KZpcYdP?p=preview&preview (train, chartjs for doughnut, sweet for sucess when added in patients.  */
+/* Bye Bye Bye Bye*/
 
 </body>
 
